@@ -1,0 +1,23 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <form>
+    <h2 class="form-title">Hello, Enter your name.</h2>
+    <fieldset>
+      <input
+        type="text"
+        name="firstName"
+        placeholder="First name"
+        onchange={handleChange}
+        value={firstName}
+      />
+      <input
+        type="text"
+        name="lastName"
+        placeholder="Last name"
+        onchange={handleChange}
+        value={lastName}
+      />
+    </fieldset>
+    <button type="button" onclick={handleGoNext}>Next</button>
+  </form>
+</template>
